@@ -2,7 +2,8 @@
 
 ### Dependencies
 
-* Firefox 
+* Python 3.7
+* Firefox
 * Selenium & Geckodriver
 * Pandas
 
