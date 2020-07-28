@@ -8,7 +8,7 @@ driver = webdriver.Firefox(options=options)  # Firefox gecko driver located in /
 driver.implicitly_wait(20)  # Make sure don't extract elements before page finished loading
 
 
-faculties = ["sci", "eng", "it", "arts"]
+faculties = ["sci", "eng", "it", "arts"] # Can add other faculties here too as desired, take code from url of relevant page
 
 for faculty in faculties:
     # Uses 2019 unit guide, its in a much easier access format than the new 2020 one. 
@@ -20,9 +20,6 @@ for faculty in faculties:
     for unit in facultyUnitCodesElements:
         facultyUnitCodesList.append(unit.text)
         f.write(unit.text + "\n")
-
-    #print(facultyUnitCodesList)
-    #print(len(facultyUnitCodesList))
 
 f.close()
 driver.quit()

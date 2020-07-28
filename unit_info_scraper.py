@@ -69,7 +69,7 @@ if __name__ == "__main__":
     driver.implicitly_wait(20) # Ensure don't scrape for elements before page has loaded fully in
 
     # Extract unit info and output in csv file
-    unitInfo = getinfo(f"/home/lo/Desktop/webscraper/{unitCodeFile}")
+    unitInfo = getinfo(f"{unitCodeFile}")
     df = pd.DataFrame(unitInfo, columns = ['Unit Code', 'Semester(s) offered', 'Unit Name', 'Unit Coordinator(s)', 'Contact(s)'])
     df.to_csv(unitCodeFile.split(".")[0] + ".csv")
 
