@@ -7,7 +7,11 @@
 * Selenium & Geckodriver
 * Pandas
 
-### How to use
+### Why does this exist? 
+
+* I had task where I needed to record details about units and their contacts in bulk, so I decided to automate it!
+
+### How to use the scraper?
 
 * Consists of two scripts, unit_code_scraper.py and unit_info_scraper.py.
 
